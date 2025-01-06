@@ -17,9 +17,11 @@ const AdminAuth = () => {
     setError(false);
 
     try {
-      const res = await fetch(
-        `/api/authenticate/${encodeURIComponent(password)}`
-      );
+      const res = await fetch("/api/authenticate", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ password }),
+      });
       const data = await res.json();
 
       if (!data.success) {
