@@ -72,15 +72,32 @@ body {
   }
 }
 
-@keyframes grid-animation {
-  0% {
-    background-position: 0 0, 0 0;
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
   }
-  100% {
-    background-position: 50px 50px, 50px 50px;
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
-.animate-grid {
-  animation: grid-animation 5s linear infinite;
+.animate-fade-in {
+  animation: fade-in 0.8s ease-in-out;
+}
+
+@keyframes slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-slide-up {
+  animation: slide-up 0.8s ease-in-out;
 }

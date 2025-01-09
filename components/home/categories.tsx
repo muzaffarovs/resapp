@@ -37,7 +37,7 @@ const Categories = () => {
         <h2 className="text-2xl mb-10 text-center md:text-left font-extrabold text-gradient bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-600">
           Categories
         </h2>
-        <ul className="grid xs:grid-cols-1 grid-cols-2 md:grid-cols-3  gap-10">
+        <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-10">
           {resources.map((item, index) => (
             <li
               className="border mx-auto border-gray-700 w-fit rounded-lg hover:border-text-purple-400 hover:border-2 transition-all hover:text-purple-400 hover:scale-105 bg-gradient-to-b from-gray-900 via-gray-800 to-black"
