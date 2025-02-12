@@ -6,6 +6,7 @@ import { EdgeStoreProvider } from "@/lib/edgestore";
 import BgPattern from "./bg-pattern";
 import localFont from "next/font/local";
 import SiteFooter from "@/components/site-footer";
+import { TabProvider } from "@/contexts/TabContext";
 
 export const metadata: Metadata = {
   title: "maktab230",
@@ -25,13 +26,15 @@ export default function RootLayout({
     <html lang="en">
       <link rel="icon" href="/favicon/favicon.ico" sizes="any" />
       <body className={`antialiased relative ${pacifico.className}`}>
-        <EdgeStoreProvider>
-          <BgPattern />
-          <SiteHeader className={`${pacifico.className} font-sans z-50`} />
-          {children}
-          <SiteFooter className="z-50" />
-          <Toaster />
-        </EdgeStoreProvider>
+        <TabProvider>
+          <EdgeStoreProvider>
+            <BgPattern />
+            <SiteHeader className={`${pacifico.className} font-sans z-50`} />
+            {children}
+            <SiteFooter className="z-50" />
+            <Toaster />
+          </EdgeStoreProvider>
+        </TabProvider>
       </body>
     </html>
   );
