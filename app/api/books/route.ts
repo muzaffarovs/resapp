@@ -31,7 +31,7 @@ export const GET = async () => {
   try {
     await connectMongoDB();
 
-    const books = await Book.find().sort({ updatedAt: -1 });
+    const books = await Book.find().sort({ title: 1 });
     return NextResponse.json({ books }, { status: 200 });
   } catch (error) {
     console.error("Error finding book:", error);

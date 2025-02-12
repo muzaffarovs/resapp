@@ -42,10 +42,10 @@ const SiteHeader = ({ className = "" }: { className?: string }) => {
     >
       <div className="flex justify-between items-center">
         <Link
-          className="font-extrabold text-2xl text-gradient bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-600 hover:opacity-90"
+          className=" font-extrabold text-2xl text-gradient bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-600 hover:opacity-90"
           href="/"
         >
-          ResApp
+          maktab 230
         </Link>
 
         <Menubar className="border-none focus:border-none bg-transparent">

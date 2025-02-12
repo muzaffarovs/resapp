@@ -72,17 +72,17 @@ export const List = () => {
         <ul className="mt-5 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-10 w-full">
           {book?.map((book) => (
             <li
-              className="border w-72 border-gray-700 rounded-md p-5 items-center mx-auto"
+              className="border w-full border-gray-700 rounded-md p-5 items-center mx-auto"
               key={book._id}
             >
-              <p>{book.title}</p>
+              <p className="font-mono">{book.title}</p>
 
               <Link
-                className="block my-2 text-red-400"
+                className="block my-2 text-red-400 font-mono"
                 href={book.url}
                 target="_blank"
               >
-                URL
+                download book
               </Link>
 
               <p className="text-xs text-left">

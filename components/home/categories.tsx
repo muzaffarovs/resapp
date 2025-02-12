@@ -34,8 +34,8 @@ const Categories = () => {
       className="h-full w-full md:w-[calc(100%-4rem)] max-w-7xl md:border border-gray-700 md:rounded-xl z-20 mx-auto"
     >
       <div className="bg-transparent md:bg-gradient-to-b from-gray-900 via-gray-800 to-black text-white rounded-xl p-6">
-        <h2 className="text-2xl mb-10 text-center md:text-left font-extrabold text-gradient bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-600">
-          Categories
+        <h2 className="font-mono text-2xl mb-10 text-center md:text-left font-extrabold text-gradient bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-600">
+          Go to
         </h2>
         <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-10">
           {resources.map((item, index) => (
