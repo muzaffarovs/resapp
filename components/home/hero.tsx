@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
@@ -34,7 +35,9 @@ const Hero = () => {
 
           <div className="lg:w-1/2 mt-10 lg:mt-0 flex justify-center animate-fade-in">
             <div className="hidden md:block w-full max-w-md lg:max-w-lg">
-              <img
+              <Image
+                width={500}
+                height={500}
                 src="/hero1.jpg"
                 alt="Hero Illustration"
                 className="rounded-lg shadow-lg"
