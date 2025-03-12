@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://maktab230.vercel.app/sitemap.xml

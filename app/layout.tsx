@@ -9,8 +9,9 @@ import SiteFooter from "@/components/site-footer";
 import { TabProvider } from "@/contexts/TabContext";
 
 export const metadata: Metadata = {
-  title: "maktab230",
-  description: "resources app for maktab230",
+  title: "Maktab 230 – Your School Website",
+  description:
+    "Official website of Maktab 230. Stay updated with school news and events.",
   other: {
     "google-site-verification": "N9zPh1zG20UeuyDQwGyu52pFggQPhBIFxKXH5vDMDMc",
   },
