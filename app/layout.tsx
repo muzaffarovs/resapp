@@ -11,6 +11,9 @@ import { TabProvider } from "@/contexts/TabContext";
 export const metadata: Metadata = {
   title: "maktab230",
   description: "resources app for maktab230",
+  other: {
+    "google-site-verification": "N9zPh1zG20UeuyDQwGyu52pFggQPhBIFxKXH5vDMDMc",
+  },
 };
 
 const pacifico = localFont({
